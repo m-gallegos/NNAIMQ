@@ -10,7 +10,7 @@ Requirements:
 The execution of NNAIMQ requires a Linux box and the following libraries and modules:
 
 - Python version 3.7.3 or newer.  
-- keras, matplotlib, numpy, pandas, seaborn and tensorflow  
+- keras, matplotlib, numpy, pandas, seaborn and tensorflow.  
 
 It should be noticed that some of the aforementioned modules or libraries are not used explicitly but they may be suitable to run some test on the performance of this first version of the NNAIMQ code.
 
