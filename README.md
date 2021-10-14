@@ -6,7 +6,7 @@ NNAIMQ is a Python interfaced model designed to predict QTAIM charges of C, H, O
 -The ./code/ folder gathers all the required files to execute the NNAIMQ code.   
 -The ./examples/ folder contains an input example for the execution of NNAIMQ.  
 
-Requirements:
+Requirements:  
 The execution of NNAIMQ requires the following libraries and modules:
 
 -numpy,sys,subprocess,os,tensorflow,pathlib,pandas,seaborn,matplotlib,random.   
