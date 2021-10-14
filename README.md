@@ -13,7 +13,7 @@ The execution of NNAIMQ requires the following libraries and modules:
 -Additionally, the Keras module is required.   
 -Python, at least, version 3.7.3.  
 
-It should be noticed that some of the aforementioned modules or libraries are not used explicitly but may be suitable to run some test on the performance of this first version of the NNAIMQ code.
+It should be noticed that some of the aforementioned modules or libraries are not used explicitly but they may be suitable to run some test on the performance of this first version of the NNAIMQ code.
 
 Execution of NNAIMQ:
 
