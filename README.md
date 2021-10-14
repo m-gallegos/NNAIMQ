@@ -39,13 +39,13 @@ folder. The geometries of the strcutures to be computed are given in standard XY
 cartesian coordinates, for instance:
 
  
-    5
-    methane
-    C         -4.36105        1.86636        0.00000
-    H         -3.29105        1.86636        0.00000
-    H         -4.71772        1.07300       -0.62311
-    H         -4.71772        2.80267       -0.37552
-    H         -4.71772        1.72342        0.99863
+    5  
+    methane  
+    C         -4.36105        1.86636        0.00000  
+    H         -3.29105        1.86636        0.00000  
+    H         -4.71772        1.07300       -0.62311  
+    H         -4.71772        2.80267       -0.37552  
+    H         -4.71772        1.72342        0.99863  
 
 
 4) NNAIMQ is executed from the command line as:
