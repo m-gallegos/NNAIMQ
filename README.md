@@ -30,17 +30,15 @@ contained.
 contains a list of the geometries whose atomic charge is to be computed.
 As an example, a simple input file could be:
 
-    ------------------
     methane.xyz
     water.xyz
     toluene.xyz
-    ------------------
 
 3) The files containing the strcutures (i.e methane.xyz) must be in the execution
 folder. The geometries of the strcutures to be computed are given in standard XYZ
 cartesian coordinates, for instance:
 
-    --------------------------------------------------
+ 
     5
     methane
     C         -4.36105        1.86636        0.00000
@@ -48,7 +46,7 @@ cartesian coordinates, for instance:
     H         -4.71772        1.07300       -0.62311
     H         -4.71772        2.80267       -0.37552
     H         -4.71772        1.72342        0.99863
-    --------------------------------------------------
+
 
 4) NNAIMQ is executed from the command line as:
    python NNAIMQ_v1.py input
