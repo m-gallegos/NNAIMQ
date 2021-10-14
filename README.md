@@ -45,3 +45,9 @@ H -4.71772 1.72342  0.99863
 -name.acsf: file containing the featurization vector.  
 
 6) After the execution, the .acsf files are not required anymore and can be removed from the current directory.
+
+If you have any technical questions or need support, contact us:  
+
+-miguelgallegosgonzalez@gmail.com gallegosmiguel@uniovi.es 
+-jmguevarav@gmail.com  
+-ampendas@uniovi.es  
