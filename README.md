@@ -48,6 +48,6 @@ H -4.71772 1.72342  0.99863
 
 If you have any technical questions or need support, contact us:  
 
--miguelgallegosgonzalez@gmail.com gallegosmiguel@uniovi.es 
+-miguelgallegosgonzalez@gmail.com gallegosmiguel@uniovi.es  
 -jmguevarav@gmail.com  
 -ampendas@uniovi.es  
