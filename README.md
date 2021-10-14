@@ -9,9 +9,8 @@ NNAIMQ is a Python interfaced model designed to predict QTAIM charges of C, H, O
 Requirements:  
 The execution of NNAIMQ requires a Linux box and the following libraries and modules:
 
--numpy,sys,subprocess,os,tensorflow,pathlib,pandas,seaborn,matplotlib,random.   
--Additionally, the Keras module is required.   
--Python, at least, version 3.7.3.  
+- Python version 3.7.3 or newer.  
+- keras matplotlib numpy pandas seaborn tensorflow  
 
 It should be noticed that some of the aforementioned modules or libraries are not used explicitly but they may be suitable to run some test on the performance of this first version of the NNAIMQ code.
 
