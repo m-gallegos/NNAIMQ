@@ -30,9 +30,9 @@ contained.
 contains a list of the geometries whose atomic charge is to be computed.
 As an example, a simple input file could be:
 
-    methane.xyz
-    water.xyz
-    toluene.xyz
+    methane.xyz  
+    water.xyz  
+    toluene.xyz  
 
 3) The files containing the strcutures (i.e methane.xyz) must be in the execution
 folder. The geometries of the strcutures to be computed are given in standard XYZ
