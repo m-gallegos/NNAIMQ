@@ -1,13 +1,13 @@
 # NNAIMQ
 This repository gathers the NNAIMQ code along with some instructions and readme files.
 
-NNAIMQ is a Python interfaced model designed to predict QTAIM charges of C, H, O and N atoms with high accuracy within simple gas-phase organic and biological structures. Altogether, NNAIMQ comprises a total of 4 Artificial Neural Networks (ANN) fitted to quantum chemical data.
+NNAIMQ is a Python interfaced model designed to predict QTAIM charges of C, H, O and N atoms with high accuracy within simple gas-phase organic and biological structures. Altogether, NNAIMQ comprises a total of 4 Artificial Neural Networks (ANN) fitted to quantum chemical data.  
 
 -The ./code/ folder gathers all the required files to execute the NNAIMQ code.   
 -The ./examples/ folder contains an input example for the execution of NNAIMQ.  
 
 Requirements:  
-The execution of NNAIMQ requires the following libraries and modules:
+The execution of NNAIMQ requires a Linux box and the following libraries and modules:
 
 -numpy,sys,subprocess,os,tensorflow,pathlib,pandas,seaborn,matplotlib,random.   
 -Additionally, the Keras module is required.   
