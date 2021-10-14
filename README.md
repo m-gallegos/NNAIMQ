@@ -49,10 +49,10 @@ cartesian coordinates, for instance:
 
 
 4) NNAIMQ is executed from the command line as:
-   python NNAIMQ_v1.py input
+   python NNAIMQ_v1.py input  
 5) If executed correctly, NNAIMQ generates different output files:
-   -name.charge: file containing the QTAIM charges.
-   -name.acsf: file containing the featurization vector.
+   -name.charge: file containing the QTAIM charges.  
+   -name.acsf: file containing the featurization vector.  
    
    After the execution, the *.acsf* files are not required anymore and can be 
    removed from the current directory.
