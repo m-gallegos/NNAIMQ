@@ -35,12 +35,11 @@ tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 absolutepath = os.path.abspath(__file__)
 dividido = absolutepath.split("/")
 ROOT_DIR = "/".join(dividido[:-1])
-#print(ROOT_DIR)
 
 CURR_DIR = os.getcwd()
-#print(CURR_DIR)
 
 ############################################################################
+
 def norm(x,mean,std):
   y=np.empty_like(x)
   y[:]=x
@@ -51,6 +50,7 @@ def norm(x,mean,std):
     counter=counter+1
   y=np.transpose(y)
   return y
+
 ############################################################################
 
 input_largo=sys.argv[1]
@@ -117,6 +117,7 @@ with open(list_geom) as f34:
         print("************************************************************")
         print("Computing the ACSF descriptor for file", geom)
         print("************************************************************")
+        geom=CURR_DIR+"/"+geom
         f=open(geom,"r")
         contents=f.read()
         f.close()
