@@ -8,23 +8,38 @@
 # Author (s): M. Gallegos in collaboration with J.M. Guevara-Vela and
 # A. M. Pendas.
 ############################################################################
-import numpy as np
+import os
 import sys
 import subprocess
-import os
+import numpy as np
+import pandas as pd
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+from random import randint
+
 import tensorflow as tf
-import pathlib
 from tensorflow import keras
 from tensorflow.keras import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import Flatten
-import pandas as pd
-import seaborn as sns
-import matplotlib.pyplot as plt
-from random import randint
+
 os.environ['KMP_WARNINGS'] = '0'
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '3' 
 tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
+
+############################################################################
+### Get where the executables are located, ROOT_DIR
+### Get where the input and xyz files are located, CURR_DIR
+
+absolutepath = os.path.abspath(__file__)
+dividido = absolutepath.split("/")
+ROOT_DIR = "/".join(dividido[:-1])
+#print(ROOT_DIR)
+
+CURR_DIR = os.getcwd()
+#print(CURR_DIR)
+
 ############################################################################
 def norm(x,mean,std):
   y=np.empty_like(x)
@@ -37,12 +52,21 @@ def norm(x,mean,std):
   y=np.transpose(y)
   return y
 ############################################################################
-list_geom=sys.argv[1]
+
+input_largo=sys.argv[1]
+dividido = input_largo.split("/")
+list_geom=CURR_DIR+"/"+dividido[-1]
 print("Reading the geometry files from",list_geom)
+
 ############################################################################
+
 np.set_printoptions(threshold=sys.maxsize)
 pd.set_option("display.max_rows", None, "display.max_columns", None)
+
 ############################################################################
+
+os.chdir(ROOT_DIR)
+
 mean_C= np.loadtxt("nnqC.mean",dtype='f')
 std_C = np.loadtxt("nnqC.std",dtype='f')
 mean_H= np.loadtxt("nnqH.mean",dtype='f')
@@ -52,13 +76,17 @@ std_O = np.loadtxt("nnqO.std",dtype='f')
 mean_N= np.loadtxt("nnqN.mean",dtype='f')
 std_N = np.loadtxt("nnqN.std",dtype='f')
 print("Loading data statistics............DONE!")
+
 ############################################################################
+
 model_C = tf.keras.models.load_model('nnqC.h5')
 model_H = tf.keras.models.load_model('nnqH.h5')
 model_O = tf.keras.models.load_model('nnqO.h5')
 model_N = tf.keras.models.load_model('nnqN.h5')
 print("Loading Neural Networks............DONE!")
+
 ############################################################################
+
 col_c = 129
 col_h = 132
 col_o = 111
@@ -79,7 +107,9 @@ column_names_c=colname_c
 column_names_h=colname_h
 column_names_o=colname_o
 column_names_n=colname_n
+
 ############################################################################
+
 with open(list_geom) as f34:
     for geomline in f34:
         geom=geomline.rstrip('\n') 
