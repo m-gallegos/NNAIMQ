@@ -11,6 +11,7 @@ The execution of NNAIMQ requires a Linux box and the following libraries and mod
 
 - Python version 3.7.3 or newer.  
 - keras, matplotlib, numpy, pandas, seaborn and tensorflow.  
+- x86-64 or ARM-based (M1) processors.
 
 It should be noticed that some of the aforementioned modules or libraries are not used explicitly but they may be suitable to run some test on the performance of this first version of the NNAIMQ code.
 
@@ -19,6 +20,8 @@ Execution of NNAIMQ:
 The execution of NNAIMQ is straightforward:
 
 1) NNAIMQ must be executed in the same directory where all the code files are contained.
+
+1.5) Be sure that the SSFC file that your computer is executing is the one that corresponds with the architecture processor.
 
 2) An input file with any desired name (i.e input) is required. This file contains a list of the geometries whose atomic charge is to be computed. As an example, a simple input file could be:
 
